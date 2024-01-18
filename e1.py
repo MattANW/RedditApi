@@ -9,14 +9,14 @@ def get_cmap(n, name='hsv'):
 
 if __name__ == "__main__":
     db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="$^7ijyecCtRgnauucFNJ",
-        database="hamburgersever"
+        host="Example",
+        user="Example",
+        password="Example",
+        database="Example"
     )
     
     vdb = VirtualDataBase()
-    vdb.sync_from_database(db, "hamburgersever")
+    vdb.sync_from_database(db, "Example")
     
     """# frequency, polarity and subjectivity
     freq = []
@@ -37,9 +37,6 @@ if __name__ == "__main__":
     ax.set_ylabel("Polarity")
     ax.set_zlabel("Subjectivity")
     plt.show()"""
-
-
-
 
     pola = []
     subj = []
