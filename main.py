@@ -40,16 +40,16 @@ def app_startup():
     global vdb
     
     db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="$^7ijyecCtRgnauucFNJ",
-        database="hamburgersever"
+        host="Example",
+        user="Example",
+        password="Example",
+        database="Example"
     )
     
     vdb = VirtualDataBase()
     
     def sync_local_db():
-        vdb.sync_from_database(db, "hamburgersever")
+        vdb.sync_from_database(db, "Example")
         asyncio.sleep(3000)
     
     asyncio.new_event_loop()
