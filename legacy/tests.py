@@ -9,15 +9,15 @@ from comment_data import CommentData
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="$^7ijyecCtRgnauucFNJ",
-    database="HamburgerSever"
+    password="",
+    database=""
     )
 
 vb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="$^7ijyecCtRgnauucFNJ",
-    database="testdatabase"
+    password="",
+    database=""
 )
 
 mycursorvb = vb.cursor()
