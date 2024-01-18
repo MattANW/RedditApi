@@ -75,23 +75,23 @@ def export():
 if __name__ == "__main__":
     reddit = praw.Reddit(
         check_for_async=False,
-        client_id="pR19Z1FPJCntgpmdrDUE5g",
-        client_secret="233GM4dMBbIF8ALlj0FfWEik2aJXSw",
-        password="",
-        user_agent="MSi2DaBot",
-        username="ThisIsATestTime",
+        client_id="Example",
+        client_secret="Example",
+        password="Example",
+        user_agent="Example",
+        username="Example",
     )
 
     db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="$^7ijyecCtRgnauucFNJ",
-        database="hamburgersever"
+        host="Example",
+        user="Example",
+        password="Example",
+        database="Example"
     )
     
     dbcursor = db.cursor()
 
     vdb = VirtualDataBase()
-    vdb.sync_from_database(db, "hamburgersever")
+    vdb.sync_from_database(db, "Example")
 
     asyncio.run(DataMiner(reddit, db, vdb))
