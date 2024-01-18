@@ -38,14 +38,14 @@ def calculate_topic_popularity(vdb: VirtualDataBase, topic: str) -> Tuple[str, s
 
 if __name__ == "__main__":
     db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="$^7ijyecCtRgnauucFNJ",
-        database="hamburgersever"
+        host="Example",
+        user="Example",
+        password="Example",
+        database="Example"
     )
     
     vdb = VirtualDataBase()
-    vdb.sync_from_database(db, "hamburgersever")
+    vdb.sync_from_database(db, "Example")
     
     while True:
         topic = input("Enter a topic you would like data on: ")
