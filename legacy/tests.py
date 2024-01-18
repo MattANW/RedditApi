@@ -7,17 +7,17 @@ from time import time
 from comment_data import CommentData
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database=""
+    host="Example",
+    user="Example",
+    password="Example",
+    database="Example"
     )
 
 vb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database=""
+    host="Example",
+    user="Example",
+    password="Example",
+    database="Example"
 )
 
 mycursorvb = vb.cursor()
@@ -56,11 +56,11 @@ counter = 0
 
 reddit = praw.Reddit(
     check_for_async=False,
-    client_id="pR19Z1FPJCntgpmdrDUE5g",
-    client_secret="233GM4dMBbIF8ALlj0FfWEik2aJXSw",
-    password="",
-    user_agent="MSi2DaBot",
-    username="ThisIsATestTime",
+    client_id="Example",
+    client_secret="Example",
+    password="Example",
+    user_agent="Example",
+    username="Example",
 )
 
 async def DataMiner() -> None:
